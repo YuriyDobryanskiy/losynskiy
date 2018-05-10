@@ -1,0 +1,268 @@
+@font-face {font-family: proxima_nova_light; src: url(../files/PROXIMANOVA-LIGHT.OTF);}
+@font-face {font-family: proxima_nova_semibold; src: url(../files/PROXIMANOVA-SEMIBOLD.OTF);}
+@font-face {font-family: proxima_nova_thin; src: url(../files/PROXIMANOVAT-THIN.OTF);}
+@font-face {font-family: proxima_nova_extrabold; src: url(../files/PROXIMANOVA-EXTRABLD.OTF);}
+
+*{margin:0; padding: 0;font-size: 20px;font-family: "proxima_nova_light";color: black;}
+.clear{clear: both;}
+
+/*HEADER*/
+.wrapper{
+	max-width:1200px;
+	min-width: 320px;
+	margin:0 auto;	
+}
+.header .logo{
+	text-transform: uppercase;
+}
+.header .logo{width: 70%;}
+.header .menu{width: 30%;}
+.header .logo, .header .menu{
+	float: left;
+	font-family: "proxima_nova_light";
+	margin: 25px 0;
+}
+.header .logo a, .header ul li a{
+	color: inherit; text-decoration: none;
+}
+.header .menu{
+	text-align: right;
+	margin: 15px 0;
+}
+.header span, .main_text .title span,.footer span{
+	font-weight: bold;
+}
+.header ul li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 10px 5px 10px 0;
+}
+.header ul li:after{
+	content: "|";
+	margin-left: 10px;
+}
+.header ul li:last-child:after{
+	content: "";
+	margin-left: 0px;
+}
+.header ul li a.active {
+    border-bottom: 5px solid black;
+}
+/*HEADER*/
+
+
+/*IMG*/
+.main_img{
+	width:100%;
+	margin-bottom: 26px;
+}
+.main_img img{
+	width:100%;
+}
+/*IMG*/
+
+
+/*MAIN TEXT*/
+.main_text{
+	width:96%;
+}
+.main_text td{
+	width:50%;
+}
+.main_text td:nth-child(2){
+	vertical-align: top;
+}
+.main_text td:nth-child(1){
+	vertical-align: bottom;
+}
+.main_text .title, .contact .title{
+	margin-bottom: 27px;
+}
+.main_text .title b, .contact .title span{font-family: "proxima_nova_semibold";}
+.main_text .title b {font-size: inherit;}
+.main_text .title, .main_text .text, .main_text .contact .email_phone, .contact .title{font-family: "proxima_nova_thin";}
+.main_text .title, .main_text .title span, .contact .title, .contact .title span{font-size: 36px;}	
+.main_text .text{
+	margin-bottom: 34px;
+	font-size: 24px;
+}
+.main_text .text b{
+	font-size: inherit;
+}
+.main_text p:last-child{
+	padding-bottom: 34px;
+	margin-bottom: 0px;
+}
+.main_text .text:last-child:after{
+	content: url('../img/line.png');
+	display: block;
+    margin-top: 28px;
+}
+.main_text .email_phone:after{
+	content: "" !important;
+}	
+.main_text .contact, .thank_you{
+	padding-left: 140px;
+}
+.contact .email_phone{
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+.contact .email_phone b{font-size: 24px; font-weight: bold;}
+.contact .social{
+	list-style-type: none;
+}
+.contact .social li{
+	display: inline-block;
+	margin-left: 6px;
+	float: left;
+}
+.contact .social li img{
+	max-width: 30px;
+}
+.contact .social li:first-child{margin-left: 0;}
+.thank_you p{
+	font-family: "proxima_nova_extrabold";
+	font-size: 89px;
+	color: #d2d2d2;
+	line-height: 65px;
+}
+/*MAIN TEXT*/	
+
+/*GALLERY*/
+.gallery .title{
+	font-family: proxima_nova_semibold;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+.gallery_contact{
+	margin-bottom: 40px;
+}
+
+.slideshow-container .s_menu{
+	position: absolute;
+    top: 0;
+    right: 0;
+    background: #c3c3c3;
+    width: 120px;
+}
+.slideshow-container .s_menu li{
+	list-style-type: none;
+}
+.slideshow-container .s_menu li a{
+	font-family: proxima_nova_thin;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 3px 5px;
+}
+.slideshow-container .s_menu li:hover{
+	background-color: black;
+}
+.slideshow-container .s_menu li:hover a {
+	color: #d3d3d3;
+}
+.slideshow-container .s_menu li .active2{
+	color: #d3d3d3;
+	background: black;
+	padding: 2px 5px 0px;
+	display: block;
+}
+.mySlides img{max-height:800px; box-shadow: 3px 3px 7px rgba(0,0,0,.3);max-width: 100%;}
+.fade {text-align: center;}
+
+
+/*GALLERY*/
+
+/*FOOTER*/
+.footer{margin-bottom:20px;}
+.footer .copyright{margin-bottom: 10px;}
+.footer .copyright, .impressum{
+	font-family: "proxima_nova_light";
+	text-align: center;
+}
+.impressum span{text-decoration: underline; cursor: pointer;}
+.footer .impressum_text p, .footer .impressum_text p a{margin-bottom: 10px; color:gray;}
+#impressum_text{
+	margin-top: 10px;
+	display: none;
+}
+/*FOOTER*/
+
+/*ADMIN*/
+input[type="submit"]{
+    border: 0;
+    background: #859b63;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 17px;
+}
+/*ADMIN*/
+
+	
+/*MEDIA*/
+@media screen and (max-device-width : 1200px){
+	.header,.main_text,.footer,.mySlides .text, .gallery_contact{
+		padding: 0 4%;
+	}
+	.main_text{
+	width:92%;
+	}
+	.mySlides .text .text{
+		padding: 0%;
+		width: 100%;
+	}
+	.main_img{
+		margin: 0 4% 26px;
+		width:92%;
+	}
+	.mySlides img{
+		max-width: 92% !important;
+		margin: 0 4%;
+		max-height: 800px;
+	}
+	.slideshow-container .s_menu {right:4%;}
+	.slideshow-container .prev{
+		margin-left: 4% !important;
+	}
+	.slideshow-container .next {
+		right: 4% !important;
+	}
+}
+@media only screen and (max-device-width : 800px){
+	.main_text td{
+		display: block;
+		width: 100%;
+	}
+	.main_text .contact, .thank_you{
+		padding-left: 0px;
+	}
+	.contact{
+		margin-bottom: 40px;
+	}
+	.thank_you{
+		text-align: center;
+	}
+}
+@media only screen and (max-device-width : 770px){
+	.header .logo{width: 100%; display: block; float: none; margin: 15px 0;}
+	.header .menu{width: 100%; display: block; float: none; text-align: left; margin: 15px 0;}
+}
+@media only screen and (max-device-width : 570px){
+	.main_text .title, .main_text .title span,.contact .title, .contact .title span {
+    	font-size: 28px !important;
+	}
+	.main_text .title, .contact .title {
+   		margin-bottom: 15px;
+	}
+	.main_text .text,.contact .text {
+	    margin-bottom: 20px;
+	    font-size: 20px;
+	}
+	.thank_you p {
+	    font-size: 60px;
+	    line-height: 45px;
+	}
+
+}

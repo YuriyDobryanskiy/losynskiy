@@ -1,0 +1,4 @@
+img/series/Aquarium/1.jpg
+img/series/Aquarium/aquarium_4.jpg
+img/series/Aquarium/aquarium_3.jpg
+img/series/Aquarium/aquarium_2_preview.jpeg

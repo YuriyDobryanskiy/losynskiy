@@ -1,0 +1,115 @@
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.slideshow-container .prev, .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  margin-left:20px;
+}
+.slideshow-container .prev{
+	left:0;
+}
+/* Position the "next button" to the right */
+.slideshow-container .next {
+  	right: 20px;
+    border-radius: 3px;
+	font-size: 40px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slideshow-container .prev:hover, .slideshow-container .next:hover {
+  
+}
+
+/* Caption text */
+.mySlides .text {
+  color: black;
+  font-size: 22px;
+  font-family: "proxima_nova_thin";
+  /*position: absolute;*/
+  bottom: -50px;
+  width: 92%;
+  text-align: left;
+}
+.mySlides .text .title{
+	font-family: "proxima_nova_semibold";
+	font-size: 22px;
+	margin: 10px 0;
+}
+.mySlides .text .text{
+	font-size: 22px;
+	font-family: "proxima_nova_thin";
+	padding-bottom: 34px;
+}
+.mySlides .text .text:last-child:after{
+	content: url('img/line.png');
+	display: block;
+    margin-top: 18px;
+}
+
+/* Fading animation */
+.mySlides .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-device-width : 1024px){
+	.slideshow-container .prev, .slideshow-container .next {
+		/*top: 330px;*/
+	}
+}
+@media only screen and (max-device-width : 768px){
+	.slideshow-container .prev, .slideshow-container .next {
+		/*top: 230px;*/
+	}
+}
+@media only screen and (max-device-width : 425px){
+	.slideshow-container .prev, .slideshow-container .next {
+		top: 38%;
+		font-size: 20px;
+		margin-left: 0;
+		padding: 10px !important;
+	}
+	.mySlides a img {width:70%;}
+	.slideshow-container .next{
+		right:0;
+	}
+}
+@media only screen and (max-device-width : 375px){
+	.slideshow-container .prev, .slideshow-container .next {
+		/*top: 120px;*/
+		font-size: 20px;
+	}
+}
+@media only screen and (max-device-width : 320px){
+	.slideshow-container .prev, .slideshow-container .next {
+		/*top: 100px;*/
+		font-size: 20px;
+	}
+}

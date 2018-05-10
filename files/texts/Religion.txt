@@ -1,0 +1,4 @@
+img/series/Religion/1.jpg
+img/series/Religion/2a.jpg
+img/series/Religion/3a.jpg
+img/series/Religion/4a.jpg

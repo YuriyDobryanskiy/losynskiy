@@ -1,0 +1,3 @@
+img/series/Israel/1.jpg
+img/series/Israel/2.jpg
+img/series/Israel/3.jpg
